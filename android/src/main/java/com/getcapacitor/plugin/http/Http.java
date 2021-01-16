@@ -399,7 +399,7 @@ public class Http extends Plugin {
         StringBuilder builder = new StringBuilder();
         String line;
         while ((line = in.readLine()) != null) {
-            builder.append(line);
+            builder.append(line).append(System.getProperty("line.separator"));
         }
         in.close();
 
